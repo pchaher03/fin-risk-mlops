@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+
+# Databricks & IDEs
+.databricks/
+.idea/
+.vscode/
+*.env
+
+# Docker & OS
+.DS_Store
+*.log

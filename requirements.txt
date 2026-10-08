@@ -1,0 +1,27 @@
+# --- Databricks & PySpark Stack ---
+pyspark==3.5.0
+databricks-sdk==0.15.0
+databricks-connect==14.0.0
+pyarrow==14.0.0
+
+# --- Topological Data Analysis (TDA) & Math ---
+numpy==1.26.4
+pandas==2.2.0
+giotto-tda==0.6.0
+ripser==0.6.4
+scipy==1.11.4
+pot==0.9.3
+
+# --- MLOps & Explainability ---
+mlflow==2.10.0
+shap==0.44.0
+
+# --- API Gateway Microservice ---
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+pydantic==2.5.3
+pydantic-settings==2.1.0
+
+# --- DevOps & Testing ---
+pytest==8.0.0
+pylint==3.0.3

@@ -7,7 +7,6 @@ Parses environment variables and falls back to default values for local developm
 from typing import Optional
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
-
 class Settings(BaseSettings):
     """
     Application Settings configuration.
@@ -39,7 +38,6 @@ class Settings(BaseSettings):
         env_file_encoding="utf-8",
         extra="ignore"
     )
-
 
 # Instantiate centralized settings singleton
 settings = Settings()

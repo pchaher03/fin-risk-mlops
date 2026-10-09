@@ -10,7 +10,6 @@ import logging
 import sys
 from datetime import datetime, timezone
 
-
 class JSONFormatter(logging.Formatter):
     """Custom Formatter to format logs as structured JSON strings."""
 
@@ -30,7 +29,6 @@ class JSONFormatter(logging.Formatter):
             log_object["exception"] = self.formatException(record.exc_info)
 
         return json.dumps(log_object)
-
 
 def get_logger(name: str = "fin-risk-mlops") -> logging.Logger:
     """
@@ -57,7 +55,6 @@ def get_logger(name: str = "fin-risk-mlops") -> logging.Logger:
         logger.propagate = False
 
     return logger
-
 
 # Instantiate standard global logger
 logger = get_logger()

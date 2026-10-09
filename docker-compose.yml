@@ -1,0 +1,17 @@
+services:
+  # FastAPI Microservice Gateway
+  api:
+    build:
+      context: .
+      dockerfile: api/Dockerfile.api
+    ports:
+      - "8000:8000"
+    environment:
+      - ENV=dev
+      - DEBUG=True
+      - DATABRICKS_HOST=${DATABRICKS_HOST:-https://localhost-mock.cloud.databricks.com}
+      - DATABRICKS_TOKEN=${DATABRICKS_TOKEN:-mock_local_token}
+    volumes:
+      - ./src:/app/src
+      - ./api:/app/api
+      - ./data:/app/data

@@ -15,3 +15,9 @@ ENV/
 # Docker & OS
 .DS_Store
 *.log
+
+# Local Data & Delta Lake Binary Files
+data/delta/
+*.parquet
+*.parquet.crc
+.checkpoint/

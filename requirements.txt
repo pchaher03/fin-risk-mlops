@@ -4,6 +4,10 @@ databricks-sdk==0.15.0
 databricks-connect==14.0.0
 pyarrow==14.0.0
 
+# Market Data
+yfinance==1.5.2
+curl_cffi>=0.16
+
 # --- Topological Data Analysis (TDA) & Math ---
 numpy==1.26.4
 pandas==2.2.0
